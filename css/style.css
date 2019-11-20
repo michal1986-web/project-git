@@ -5,9 +5,10 @@
 
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -43,7 +44,7 @@ section {
 /* Header */
 .navigation {
   height: 100vh;
-  background-image: url("images/imgb.jpg");
+  background-image: url("/images/imgb.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -57,6 +58,11 @@ section {
   display: flex;
   -ms-flex-pack: start;
       justify-content: flex-start;
+}
+
+.navigation__title h1 {
+  color: #bac51f;
+  font-style: italic;
 }
 
 .navigation__menu {
@@ -81,79 +87,48 @@ section {
   margin: 40px 40px 0 0;
 }
 
-/* Splash */
-/* Services */
-.services__box {
-  -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
-  padding: 30px;
-}
-
-.services__box i {
-  font-size: 50px;
-  width: 120px;
-  height: 120px;
-  line-height: 120px;
-}
-
-.services__box p {
-  text-align: justify;
-}
-
-/* Portfolio */
-.portfolio__box {
-  -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
-  min-height: 300px;
-  margin-bottom: 30px;
-}
-
-.portfolio__image {
-  max-width: 250px;
-}
-
-.portfolio__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/* Footer */
-.footer {
-  background: #232323;
-  text-align: center;
-  padding: 10px;
-}
-
-.footer p {
-  display: inline-block;
+.navigation__menu ul li a {
   color: #fefefe;
-}
-
-.footer ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.footer ul li {
-  color: #ce1818;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  font-size: 20px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 15px;
-  background: #fefefe;
-}
-
-.footer ul li a {
   text-decoration: none;
-  color: #ce1818;
 }
 
-/* Media */
+/* Splash */
+.splash {
+  position: relative;
+  height: 100vh;
+}
+
+.splash__inner {
+  position: absolute;
+  color: #fefefe;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash__inner--title {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.splash__inner--subtitle {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.splash__inner--btn {
+  background: #bac51f;
+  text-decoration: none;
+  height: 50px;
+  min-width: 140px;
+  display: inline-block;
+  border-radius: 10%;
+  padding: 10px;
+  color: #fefefe;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Services */
 /*# sourceMappingURL=style.css.map */
