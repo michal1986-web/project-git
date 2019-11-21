@@ -1,8 +1,9 @@
 //Variables
 
-$color-one: #fefefe; 
+$color-one: #eeeeee; 
 $color-logo: #bac51f;      
-$color-extra: #232323;    
+$color-extra: #232323; 
+$color-quote: #a09c9c; 
 
 $transition: all 1s;
 
@@ -42,10 +43,23 @@ section {
     font-size: 40px;
     text-transform: uppercase;
     margin: 40px 0;
+    position: relative;
+    letter-spacing: 1px;
+    &::after {
+        font-size: 12px;
+        font-style: italic;
+        color: $color-quote;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: 'Lorem ipsum dolor sit amet, consectetur';
+        text-transform: capitalize;
+    }
 }
 
 .box__title {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -132,3 +146,23 @@ section {
 }
 
 /* Services */
+
+.services__box {
+    flex: 0 0 33.333%; 
+    padding: 20px;
+    i {
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        color: $color-logo;
+        border: 1px solid $color-logo;
+        border-radius: 50%;
+    }
+}
+
+/* Services */
+
+.portfolio {
+    background: $color-one;
+}
